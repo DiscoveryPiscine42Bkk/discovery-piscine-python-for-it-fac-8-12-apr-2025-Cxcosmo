@@ -62,10 +62,10 @@ class Chess :
 
 def checkmate(board) :
     if board.count("K") != 1 :
-        return print("Need one King .")
+        return print("Error")
     list_board = board.split()
     for i in list_board :
         if len(i) != len(list_board) :
-            return print("This board is not square .")
+            return print("Error")
     check_chess = Chess(board)
     check_chess.check()
